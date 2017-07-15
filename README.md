@@ -18,4 +18,7 @@ $ heroku ps -a git-reporter
 
 ## Deploy
 $ git push -f heroku master
+
+## Execute
+$ heroku run git-reporter -t /app/libs/configs/settings.toml -d /app/tmp/gittest
 ```

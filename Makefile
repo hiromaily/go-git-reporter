@@ -21,3 +21,6 @@ godep:
 
 heroku:
 	git push -f heroku master
+
+heroku_exec:
+    heroku run git-reporter -t /app/libs/configs/settings.toml -d /app/tmp/gittest
