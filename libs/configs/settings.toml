@@ -1,0 +1,29 @@
+[git]
+encrypted = true
+
+[[git.repository]]
+name = "multiple-branches-for-test"
+url = "https://github.com/hiromaily/multiple-branches-for-test.git"
+
+[[git.repository.branch]]
+from = "origin/master"
+to = "origin/develop"
+
+[[git.repository.branch]]
+from = "origin/develop"
+to = "origin/master"
+
+#[[git.repository]]
+#url = "git@github.com:hiromaily/go-git-reporter.git[2]"
+#
+#[[git.repository.branch]]
+#from = "origin/master[2]"
+#to = "origin/develop[2]"
+#
+#[[git.repository.branch]]
+#from = "origin/develop[2]"
+#to = "origin/master[2]"
+
+[slack]
+encrypted = true
+key = "YXRpOA222bstRss12zmfvPSQlyqFlVmGlME0Q00wF+k46qaXiZiPnvNmRIrxyJwi"
