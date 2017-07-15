@@ -26,10 +26,10 @@ type GitLog struct {
 
 var (
 	tmplSlackMsg = `
-🤓😎😴 [Reminder] These branches have to merge! 🤓😎😴
+🤓😎😴 [Reminder] These branches have to be merged! 🤓😎😴
 {{range .}}
 *[{{.RepoName}}]*
-*branch: {{.BranchFrom}} .. {{.BranchTo}}*
+📌branch: {{.BranchFrom}} is behind {{.BranchTo}}
 {{.Log}}
 
 {{end}}

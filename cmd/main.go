@@ -81,8 +81,8 @@ func main() {
 			} else {
 				if len(out) != 0 {
 					lg.Debugf("%s", string(out))
-					//TODO: create message
-					gitMsg := sl.GitLog{RepoName: g.Name, BranchFrom: b.From, BranchTo: b.To, Log: string(out)}
+					//create message
+					gitMsg := sl.GitLog{RepoName: g.Name, BranchFrom: "`"+b.From+"`", BranchTo: "`"+b.To+"`", Log: string(out)}
 					gitMsgs = append(gitMsgs, gitMsg)
 				}
 			}
